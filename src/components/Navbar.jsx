@@ -1,26 +1,15 @@
+import Anirudhimage from "../assets/anirudhicon.png";
 const Navbar = () => {
   return (
     <>
       <section className="h-[7vh] bg-black flex justify-end md:pr-3 lg:pr-10 items-center">
         <div className="flex gap-2">
-          <div className="w-[10em] h-[2em] bg-[#d9d9d9] flex items-center pl-2 rounded-full">
-            <div className="border-[2px] border-white border-solid bg-white rounded-full">
-            <svg
-              viewBox="0 0 16 16"
-              fill="currentColor"
-              height="1.5em"
-              width="1.5em"
-            >
-              <path
-                fillRule="evenodd"
-                d="M8 16A8 8 0 108 0a8 8 0 000 16zm.847-8.145a2.502 2.502 0 10-1.694 0C5.471 8.261 4 9.775 4 11c0 .395.145.995 1 .995h6c.855 0 1-.6 1-.995 0-1.224-1.47-2.74-3.153-3.145z"
-              />
-            </svg>
-            </div>
+          <div className=" md:h-[1.75em] w-[10em] lg:h-[2em] bg-[#d9d9d9] flex items-center pl-2 rounded-full">
+            <img src={Anirudhimage} alt="" />
           </div>
 
           <div className="flex items-center">
-            <svg
+            <svg className="md:h-4 lg:h-8"
               viewBox="0 0 448 512"
               fill="#5e5353"
               height="1.5em"

@@ -6,16 +6,21 @@ const BentoBox = () => {
     <>
       <section className="bg-black h-[93vh] ">
         <div className="md:ml-[7vw] lg:ml-[5vw] w-[95vw] h-[100%]">
-          <div className=" md:w-[90%] lg:w-[95%] h-[100%] mx-auto bg-black grid grid-cols-7 grid-rows-7 gap-y-2 gap-x-4 pb-2">
-            <div className="bg-white col-span-4 row-span-2 pt-1 pl-3 rounded-2xl">
+          <div className=" md:w-[90%] lg:w-[95%] h-[100%] mx-auto bg-black grid grid-cols-7 grid-rows-7 md:gap-y-1 md:gap-x-2 lg:gap-y-2 lg:gap-x-4 pb-2">
+            <div className="bg-[#212121] col-span-4 row-span-2 pt-1 pl-3 rounded-2xl">
               <div className="flex justify-between">
                 <div className="space-y-1">
-                  <p className="text-lg varela-round-regular">Expenses(AI)</p>
-                  <p className="text-3xl varela-round-regular">$21,000</p>
+                  <p className=" md:text-sm lg:text-lg varela-round-regular text-white">
+                    Expenses (AI)
+                  </p>
+                  <p className=" md:text-xl lg:text-3xl varela-round-regular text-white">
+                    $21,000
+                  </p>
                 </div>
                 <div className="pr-4 pt-2">
                   <svg
-                    fill="#1019EC"
+                    className="md:h-7 lg:h-8"
+                    fill="#D9D9D9"
                     viewBox="0 0 16 16"
                     height="2em"
                     width="2em"
@@ -24,116 +29,103 @@ const BentoBox = () => {
                   </svg>
                 </div>
               </div>
-              <div className="text-center text-3xl">
+              <div className="text-center text-white text-3xl">
                 <p>Graph</p>
               </div>
             </div>
 
-            <div className="col-span-3 row-span-2 bg-[#212121] border-[1.5px] border-solid border-[#f3f3f3] border-opacity-30 rounded-2xl text-white">Invoice</div>
+            <div className="col-span-3 row-span-2 bg-[#212121] border-[1.5px] border-solid border-[#f3f3f3] border-opacity-30 rounded-2xl text-white">
+              Invoice
+            </div>
 
-            <div className=" col-span-2 row-span-3 bg-[#212121] border-[1.5px] border-solid border-[#f3f3f3] border-opacity-30 rounded-2xl text-white">Revenue</div>
-
-            <div className="bg-white col-span-1 row-span-1 rounded-2xl pt-1 pl-2">
+            <div className=" col-span-2 row-span-3 bg-[#212121] border-[1.5px] border-solid border-[#f3f3f3] border-opacity-30 rounded-2xl text-white pt-1 pl-2">
               <div className="flex justify-between">
                 <div className="">
+                  <p className=" md:text-sm lg:text-lg varela-round-regular text-white">
+                    Revenue (AI)
+                  </p>
+                  <p className="md:text-xl lg:text-3xl varela-round-regular text-white">
+                    $36,000
+                  </p>
+                </div>
+                <div className="md:pl-12 lg:pl-40 pt-2">
+                  <svg
+                    className="md:h-7 lg:h-8"
+                    fill="#D9D9D9"
+                    viewBox="0 0 16 16"
+                    height="2em"
+                    width="2em"
+                  >
+                    <path d="M0 8a8 8 0 1016 0A8 8 0 000 8zm5.904 2.803a.5.5 0 11-.707-.707L9.293 6H6.525a.5.5 0 110-1H10.5a.5.5 0 01.5.5v3.975a.5.5 0 01-1 0V6.707l-4.096 4.096z" />
+                  </svg>
+                </div>
+                <div></div>
+              </div>
+              <div></div>
+            </div>
+
+            <div className="bg-[#C5FF22] col-span-1 row-span-1 rounded-2xl pt-1 pl-2">
+              <div className="flex justify-between">
+                <div>
                   <p className="varela-round-regular md:text-[10px] lg:text-lg font-bold">
                     Clients
                   </p>
-                  <p className="font-['Urbanist'] md:text-[8px] lg:text-[10px] text-gray-400">
+                  <p className="font-['Urbanist'] md:text-[8px] lg:text-[10px] text-gray-800">
                     increased by 5%
                   </p>
                 </div>
-                <div className=" md:pr-1 lg:pr-2 pt-1">
-                  <svg
-                    viewBox="0 0 512 512"
-                    fill="#066604"
-                    height="1em"
-                    width="1em"
-                  >
-                    <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0 0 114.6 0 256s114.6 256 256 256zm129-297c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-71-71V392c0 13.3-10.7 24-24 24s-24-10.7-24-24V177.9l-71 71c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9L239 103c9.4-9.4 24.6-9.4 33.9 0L385 215z" />
-                  </svg>
+                <div className="flex justify-end md:pt-2 lg:pt-1 md:pr-2 lg:pr-3 lg:pb-2">
+                  <img
+                    src={ClientImage}
+                    alt=""
+                    className="md:h-[0.5em] lg:h-[1em]"
+                  />
                 </div>
               </div>
-              <div className="grid grid-cols-2 relative ">
-                <div className="flex justify-end ">
-                  <p className=" md:text-2xl lg:text-3xl absolute md:top-0 lg:-top-1 ">21</p>
-                </div>
-                <div className="flex justify-end items-center md:pr-1 md:pt-3 lg:pt-0 lg:pr-3 lg:pb-2">
-                  <img src={ClientImage} alt="" className="md:h-[1em] lg:h-[1.5em]" />
+              <div className="grid grid-cols-1 relative ">
+                <div className="flex justify-center ">
+                  <p className=" text-3xl absolute md:top-1 lg:-top-1 urbanist">
+                    21
+                  </p>
                 </div>
               </div>
             </div>
-            <div className="bg-white col-span-1 row-span-1 rounded-2xl pt-1 pl-2">
+            <div className="bg-[#C5FF22] col-span-1 row-span-1 rounded-2xl pt-1 pl-2">
               <div className="flex justify-between">
-                <div className="">
+                <div>
                   <p className="varela-round-regular md:text-[10px] lg:text-lg font-bold">
                     Retainers
                   </p>
-                  <p className="font-['Urbanist'] md:text-[8px] lg:text-[10px] text-gray-400">
+                  <p className="font-['Urbanist'] md:text-[8px] lg:text-[10px] text-gray-800">
                     increased by 2%
                   </p>
                 </div>
-                <div className=" md:pr-1 lg:pr-2 pt-1">
-                  <svg
-                    viewBox="0 0 512 512"
-                    fill="#066604"
-                    height="1em"
-                    width="1em"
-                  >
-                    <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0 0 114.6 0 256s114.6 256 256 256zm129-297c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-71-71V392c0 13.3-10.7 24-24 24s-24-10.7-24-24V177.9l-71 71c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9L239 103c9.4-9.4 24.6-9.4 33.9 0L385 215z" />
-                  </svg>
+                <div className="flex justify-end pt-1 md:pr-2 lg:pr-3 lg:pb-2">
+                  <img
+                    src={RetainersImage}
+                    alt=""
+                    className="md:h-[0.75em] lg:h-[1.251em]"
+                  />
                 </div>
               </div>
-              <div className="grid grid-cols-2 relative ">
-                <div className="flex justify-end ">
-                  <p className="md:text-2xl lg:text-3xl absolute md:top-0 lg:-top-1 ">3</p>
-                </div>
-                <div className="flex justify-end items-center md:pr-2 md:pt-2 lg:pt-0 lg:pr-3 lg:pb-2">
-                  <img src={RetainersImage} alt="" className="md:h-[1.25em] lg:h-[1.5em]" />
+              <div className="grid grid-cols-1 relative ">
+                <div className="flex justify-center ">
+                  <p className=" text-3xl absolute md:top-1 lg:-top-1 urbanist ">
+                    3
+                  </p>
                 </div>
               </div>
             </div>
 
-
-            {/* <div className="bg-white col-span-1 row-span-1 rounded-2xl pt-1 pl-2">
-              <div className="flex justify-between">
-                <div className="">
-                  <p className="varela-round-regular text-lg font-bold">
-                    Retainers
-                  </p>
-                  <p className="font-['Urbanist'] text-[10px] text-gray-400">
-                    increased by 2%
-                  </p>
-                </div>
-                <div className=" pr-2 pt-1">
-                  <svg
-                    viewBox="0 0 512 512"
-                    fill="#066604"
-                    height="1em"
-                    width="1em"
-                  >
-                    <path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0 0 114.6 0 256s114.6 256 256 256zm129-297c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-71-71V392c0 13.3-10.7 24-24 24s-24-10.7-24-24V177.9l-71 71c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9L239 103c9.4-9.4 24.6-9.4 33.9 0L385 215z" />
-                  </svg>
-                </div>
-              </div>
-              <div className="grid grid-cols-2 relative">
-                <div className="flex justify-end">
-                  <p className="text-3xl absolute -top-1 ">3</p>
-                </div>
-                <div className="flex justify-end items-center pr-3 pb-2">
-                  <img src={RetainersImage} alt="" className="h-[1.5em]" />
-                </div>
-              </div>
-            </div> */}
-
-            <div className="bg-[#212121] col-span-3 row-span-2 rounded-2xl pt-2 pr-4 pl-4 border-[1.5px] border-solid border-[#f3f3f3] border-opacity-30">
+            <div className="bg-[#212121] col-span-3 row-span-2 rounded-2xl pt-2 pr-3 pl-4 border-[1.5px] border-solid border-[#f3f3f3] border-opacity-30">
               <div className="flex justify-between varela-round-regular">
-                <p className="varela-round-regular text-lg text-white">
+                <p className="varela-round-regular md:text-sm lg:text-lg text-white">
                   Project Description
                 </p>
-                <div className="bg-white rounded-full">
+                <div>
                   <svg
-                    fill="#1019EC"
+                    className="md:h-7 lg:h-8"
+                    fill="#D9D9D9"
                     viewBox="0 0 16 16"
                     height="2em"
                     width="2em"
@@ -143,7 +135,7 @@ const BentoBox = () => {
                 </div>
               </div>
 
-              <div className="bg-[#737373] rounded-2xl border-solid border-[1.5px] font-['Urbanist'] border-white px-2 py-1 my-4 md:text-[10px] lg:text-sm text-[#d9d9d9]">
+              <div className="bg-[#737373] rounded-2xl border-solid border-[1.5px] font-['Urbanist'] border-white px-2 py-1 my-4 md:text-[8px] lg:text-sm text-[#d9d9d9]">
                 <p>
                   The system will leverage machine learning algorithms to
                   analyze historical sales data, market trends, and external
@@ -152,9 +144,10 @@ const BentoBox = () => {
               </div>
 
               <div className="flex justify-between mt-3 varela-round-regular">
-                <div className="flex items-center bg-[#d9d9d9] md:gap-1 lg:gap-2 p-1 rounded-2xl md:h-8 md:w-[90px] lg:w-[150px]">
-                  <div className="bg-white rounded-full">
+                <div className="flex items-center bg-[#d9d9d9] md:gap-1 lg:gap-2 p-1 rounded-2xl md:h-5 lg:h-8 md:w-[95px] lg:w-[150px]">
+                  <div className="bg-white rounded-full flex items-center justify-center md:w-5 lg:w-6">
                     <svg
+                      className="md:h-[1.25em] lg:h-[1.5em]"
                       viewBox="0 0 1024 1024"
                       fill="#0478ff"
                       height="1.5em"
@@ -164,7 +157,7 @@ const BentoBox = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-black md:text-[8px] lg:text-base">
+                    <p className="text-black md:text-[10px] lg:text-base">
                       Budget:{" "}
                       <span className="text-black text-opacity-55">$150</span>
                     </p>
@@ -172,9 +165,10 @@ const BentoBox = () => {
                 </div>
 
                 <div className="flex justify-end ">
-                  <div className="flex bg-[#d9d9d9] md:gap-1 lg:gap-2 p-1 rounded-2xl md:w-[140px] lg:w-[220px] md:h-8">
-                    <div className="bg-[#0478ff] rounded-full h-[1.5em] w-[1.5em] border-2 border-solid border-white flex justify-center items-center">
+                  <div className="flex items-center bg-[#d9d9d9] md:gap-1 lg:gap-2 p-1 rounded-2xl md:w-[140px] lg:w-[220px] lg:h-8 md:h-5">
+                    <div className="bg-[#0478ff] rounded-full md:h-[1.25em] lg:h-[1.5em] lg:w-[1.5em] border-2 border-solid border-white flex justify-center items-center">
                       <svg
+                        className="md:h-[0.9em] lg:h-[1.5em]"
                         fill="none"
                         viewBox="0 0 24 24"
                         height="1em"
@@ -193,8 +187,11 @@ const BentoBox = () => {
                       </svg>
                     </div>
                     <div className="flex items-center ">
-                      <p className="text-black lg:mr-1 md:text-[8px] lg:text-base">Deadline:</p>
-                      <svg className=" md:h-2 lg:h-9"
+                      <p className="text-black lg:mr-1 md:text-[8px] lg:text-base">
+                        Deadline:
+                      </p>
+                      <svg
+                        className=" md:h-2 lg:h-9"
                         viewBox="0 0 24 24"
                         fill="currentColor"
                         height="1em"
@@ -202,29 +199,31 @@ const BentoBox = () => {
                       >
                         <path d="M19.5 4h-3V2.5a.5.5 0 00-1 0V4h-7V2.5a.5.5 0 00-1 0V4h-3A2.503 2.503 0 002 6.5v13A2.503 2.503 0 004.5 22h15a2.502 2.502 0 002.5-2.5v-13A2.502 2.502 0 0019.5 4zM21 19.5c0 .828-.672 1.5-1.5 1.5h-15C3.67 21 3 20.328 3 19.5V11h18v8.5zm0-9.5H3V6.5C3 5.672 3.67 5 4.5 5h3v1.5a.5.5 0 001 0V5h7v1.5a.5.5 0 001 0V5h3c.828 0 1.5.672 1.5 1.5V10z" />
                       </svg>
-                      <p className="text-[#5F6368] lg:ml-1 md:text-[8px] lg:text-base">12-06-2024</p>
+                      <p className="text-[#5F6368] lg:ml-1 md:text-[10px] lg:text-base ">
+                        12-06-2024
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white col-span-2 row-span-2 rounded-2xl p-2">
+            <div className="bg-[#C5FF22] col-span-2 row-span-2 rounded-2xl p-2">
               Remainders
             </div>
 
             <div className="bg-[#312f2f] col-span-3 row-span-1 py-3 rounded-2xl border-[1.5px] border-solid border-white border-opacity-25">
               <div className="flex justify-around">
                 <div>
-                  <p className="text-white text-3xl varela-round-regular">
+                  <p className="text-white md:text-xl lg:text-3xl varela-round-regular">
                     8h 39m
                   </p>
-                  <p className="text-white text-opacity-90 text-md varela-round-regular">
+                  <p className="text-white text-opacity-90 md:text-sm  lg:text-md varela-round-regular">
                     Average Time Spent
                   </p>
                 </div>
 
-                <div className="bg-white rounded-full  h-[3.5em] w-[3.5em] flex items-center justify-center border-[0.5em] border-[#0478ff] border-solid">
+                <div className="bg-white rounded-full md:h-[2.5em] md:w-[2.5em]  lg:h-[3em] lg:w-[3em] flex items-center justify-center border-[0.5em] border-[#0478ff] border-solid">
                   <svg
                     viewBox="0 0 1024 1024"
                     fill="#0478ff"
@@ -238,80 +237,107 @@ const BentoBox = () => {
             </div>
 
             <div className=" col-span-5 row-span-2 bg-[#212121] border-[1.5px] border-solid border-[#f3f3f3] border-opacity-30 rounded-2xl text-white">
-              Project OverView
+              <div className=" flex justify-between items-center">
+                <div>
+                  <p className=" md:text-sm lg:text-lg varela-round-regular text-white pt-2 pl-3">
+                    Project overview
+                  </p>
+                </div>
+                <div className="flex gap-x-3">
+                  <div className="flex mt-1 gap-x-1 bg-[#d9d9d9] rounded-full justify-center items-center px-1">
+                    <p className="varela-round-regular md:text-xs lg:text-sm pl-1 text-black">Monthly Report</p>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="black"
+                      height="1.5em"
+                      width="1.5em"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
+                    </svg>
+                  </div>
+                  <div className="pr-4 pt-2 flex items-center">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="#D9D9D9"
+                      height="1.5em"
+                      width="1.5em"
+                    >
+                      <path d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="bg-white col-span-2 row-span-1 px-4 py-1 rounded-2xl space-y-4">
+            <div className="bg-[#C5FF22] col-span-2 row-span-1 px-4 py-1 rounded-2xl space-y-4">
               <div className="flex justify-between">
                 <div>
-                  <p className="text-md">
+                  <p className="md:text-sm lg:text-base">
                     Project Productivity
                   </p>
                 </div>
-                <div>
+              </div>
+
+              <div className="flex gap-x-2 justify-between ">
+                <div className="flex justify-center items-center">
                   <svg
-                    viewBox="0 0 24 24"
-                    fill="green"
+                    fill="none"
+                    viewBox="0 0 15 15"
+                    height="1.25em"
+                    width="1.25em"
+                    className="md:mt-1 lg:mt-0 md:h-4 md:mb-3 lg:mb-0 lg:h-7"
+                  >
+                    <path
+                      stroke="currentColor"
+                      d="M3.5 0v5m8-5v5M5 8.5l2 2 3.5-4m-9-4h12a1 1 0 011 1v10a1 1 0 01-1 1h-12a1 1 0 01-1-1v-10a1 1 0 011-1z"
+                    />
+                  </svg>
+                  <p className="md:text-sm md:mt-1 lg:mt-0 md:mb-2 lg:text-lg lg:mb-0 varela-round-regular ml-2">
+                    68{" "}
+                    <span className="text-opacity-50 text-black">/ Month</span>
+                  </p>
+                </div>
+                <div className="bg-[#C93A3A] rounded-xl flex justify-center items-center md:mb-2 lg:mb-1 lg:w-14 md:w-10">
+                  <p className="varela-round-regular md:text-[10px] lg:text-sm md:p-1 text-white">
+                    - 6.1%
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-[#C5FF22] col-span-2 row-span-1 px-4 py-1 rounded-2xl space-y-4">
+              <div>
+                <div className="md:text-sm lg:text-base">
+                  <p>Team Productivity</p>
+                </div>
+              </div>
+
+              <div className="flex gap-x-3 justify-between ">
+                <div className="flex justify-center items-center">
+                  <svg
+                    className="md:h-5 md:mt-1 lg:mt-0 lg:mb-1 lg:h-7"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
                     height="1.5em"
                     width="1.5em"
                   >
-                    <path d="M3 19h18a1.002 1.002 0 00.823-1.569l-9-13c-.373-.539-1.271-.539-1.645 0l-9 13A.999.999 0 003 19z" />
+                    <path
+                      fillRule="evenodd"
+                      d="M5.5 3.5a2 2 0 100 4 2 2 0 000-4zM2 5.5a3.5 3.5 0 115.898 2.549 5.507 5.507 0 013.034 4.084.75.75 0 11-1.482.235 4.001 4.001 0 00-7.9 0 .75.75 0 01-1.482-.236A5.507 5.507 0 013.102 8.05 3.49 3.49 0 012 5.5zM11 4a.75.75 0 100 1.5 1.5 1.5 0 01.666 2.844.75.75 0 00-.416.672v.352a.75.75 0 00.574.73c1.2.289 2.162 1.2 2.522 2.372a.75.75 0 101.434-.44 5.01 5.01 0 00-2.56-3.012A3 3 0 0011 4z"
+                    />
                   </svg>
-                </div>
-              </div>
-
-              <div className="flex gap-x-2">
-                <div className="flex justify-center items-center">
-                <svg fill="none" viewBox="0 0 15 15" height="1.25em" width="1.25em" className="md:h-4 md:mb-3 lg:mb-0 lg:h-7">
-                  <path
-                    stroke="currentColor"
-                    d="M3.5 0v5m8-5v5M5 8.5l2 2 3.5-4m-9-4h12a1 1 0 011 1v10a1 1 0 01-1 1h-12a1 1 0 01-1-1v-10a1 1 0 011-1z"
-                  />
-                </svg>
-                </div>
-                <p className="md:text-base md:mb-2 lg:text-lg lg:mb-0 varela-round-regular">68 <span className="text-opacity-50 text-black">/ Month</span></p>
-              </div>
-            </div>
-
-
-            <div className="bg-white col-span-2 row-span-1 px-4 py-1 rounded-2xl space-y-4">
-              <div className="flex justify-between">
-                <div>
-                  <p className="text-md">
-                    Team Productivity
+                  <p className="md:text-sm lg:text-lg md:mt-1 lg:mt-0 varela-round-regular lg:pl-2 md:pl-1">
+                    50{" "}
+                    <span className="text-opacity-50 text-black">/ Month</span>
                   </p>
                 </div>
-                <div>
-                <svg
-      viewBox="0 0 24 24"
-      fill="red"
-      height="1.5em"
-      width="1.5em"
- 
-    >
-      <path d="M11.178 19.569a.998.998 0 001.644 0l9-13A.999.999 0 0021 5H3a1.002 1.002 0 00-.822 1.569l9 13z" />
-    </svg>
+                <div className="bg-[#42A959] rounded-xl flex justify-center items-center lg:mb-1 md:w-10 lg:w-14">
+                  <p className="varela-round-regular md:text-[10px] lg:text-sm md:p-1 text-white">
+                    + 7.1%
+                  </p>
                 </div>
-              </div>
-
-              <div className="flex gap-x-2 ">
-                <div className="flex justify-center items-center">
-                <svg className="md:h-5 md:mb-1 lg:mb-1 lg:h-7"
-      viewBox="0 0 16 16"
-      fill="currentColor"
-      height="1.5em"
-      width="1.5em"
-    >
-      <path
-        fillRule="evenodd"
-        d="M5.5 3.5a2 2 0 100 4 2 2 0 000-4zM2 5.5a3.5 3.5 0 115.898 2.549 5.507 5.507 0 013.034 4.084.75.75 0 11-1.482.235 4.001 4.001 0 00-7.9 0 .75.75 0 01-1.482-.236A5.507 5.507 0 013.102 8.05 3.49 3.49 0 012 5.5zM11 4a.75.75 0 100 1.5 1.5 1.5 0 01.666 2.844.75.75 0 00-.416.672v.352a.75.75 0 00.574.73c1.2.289 2.162 1.2 2.522 2.372a.75.75 0 101.434-.44 5.01 5.01 0 00-2.56-3.012A3 3 0 0011 4z"
-      />
-    </svg>
-                </div>
-                <p className="md:text-md lg:text-lg varela-round-regular">50 <span className="text-opacity-50 text-black">/ Month</span></p>
               </div>
             </div>
-
-            
           </div>
         </div>
       </section>

@@ -4,7 +4,7 @@ const SideBar = () => {
       <section className="md:w-[10vw] lg:w-[5vw] bg-black h-screen float-start">
         <div className="grid-rows-2">
           <div className="bg-black h-[50vh] grid grid-rows-3 place-items-center md:ml-4 lg:ml-2">
-            <div className="bg-[#252323] rounded-full w-[3em] h-[3em] flex justify-center items-center">
+            <div className="bg-[#312F2F] rounded-full w-[3em] h-[3em] flex justify-center items-center">
               <svg
                 fill="#575252"
                 viewBox="0 0 16 16"
@@ -15,7 +15,7 @@ const SideBar = () => {
               </svg>
             </div>
 
-            <div className="bg-[#252323] rounded-full w-[3em] h-[3em] flex justify-center items-center">
+            <div className="bg-[#312F2F] rounded-full w-[3em] h-[3em] flex justify-center items-center">
               <svg
                 fill="none"
                 stroke="#575252"
@@ -33,7 +33,7 @@ const SideBar = () => {
               </svg>
             </div>
 
-            <div className="bg-[#252323] rounded-full w-[3em] h-[3em] flex justify-center items-center">
+            <div className="bg-[#312F2F] rounded-full w-[3em] h-[3em] flex justify-center items-center">
               <svg
                 viewBox="0 0 24 24"
                 fill="#575252"
